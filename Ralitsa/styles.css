@@ -1,0 +1,110 @@
+body{
+    height: 100vh;
+    background-color: #ffb2d7;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    overflow: hidden;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+.beginning,
+.happy{
+    position: absolute;
+    height: 90px;
+    width: 250px;
+    color: white;
+    font-size: 2rem;
+    font-weight: 500;
+    font-family: "Protest Riot", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 8px solid white;
+  border-radius: 50%;
+  cursor: pointer;
+  margin: 15px;
+}
+.happy{
+    top:0px;
+    right: 0px;
+}
+.beginning{
+    top:0px;
+    left: 0px;
+}
+.gifs{
+    width: 100%;
+}
+.cat-gif{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 30%;
+    height: 30%;
+    padding: 50px;
+    
+}
+h1{
+    color: white;
+    font-size: 4rem;
+    font-weight: 500;
+    font-family: "Protest Riot", sans-serif;
+    padding: 30px;
+}
+.buttons-container{
+    width: 70%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.button{
+    width: 30%;
+    height: 50px;
+    padding: 20px;
+    color: white;
+    font-size: 2rem;
+    font-weight: 300;
+    font-family: "Protest Riot", sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 15px;
+    cursor: pointer;
+    transition: background-color 0.7s, color 0.7s;
+}
+video{
+    margin: 30px;
+   transition: 0.7s;
+}
+#yes{
+    background-color: #ff009e;
+}
+#no{
+    background-color: #ff819f;
+}
+#kiss{
+    min-width: 8%;
+    width: auto;
+    height: 30px;
+    background-color: #ff819f;
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    transform: translate(-50%);
+    word-wrap: break-word;
+}
+#back{
+    min-width: 8%;
+    width: auto;
+    height: 30px;
+    background-color: #ff819f;
+    margin: 30px
+}
