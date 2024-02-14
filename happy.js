@@ -1,8 +1,8 @@
 let button = document.getElementById("kiss")
 let index = 0;
-
+let isButtonMoving = false
 button.addEventListener('mouseover', () => {
-    if (index === 0 || index === 1 || index === 2) {
+    if (!isButtonMoving && index === 0 || index === 1 || index === 2) {
         let randomX = getRandomInt(10, 80)
         let randomY = getRandomInt(10, 80)
         button.style.position = "absolute"
@@ -28,6 +28,13 @@ button.addEventListener('mouseover', () => {
     }
   });
 
+  button.addEventListener('transitionstart', () => {
+    isButtonMoving = true;
+});
+
+button.addEventListener('transitionend', () => {
+    isButtonMoving = false;
+});
 
 
   function getRandomInt(min, max) {
